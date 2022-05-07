@@ -18,7 +18,7 @@ public class Guitarra {
    	}
    	public void setNumeroSerie(String numeroSerie) {
        		this.numeroSerie = numeroSerie;
-    	}
+	}
    	public String getFabricante() {
        		return fabricante;
    	}
@@ -51,11 +51,11 @@ public class Guitarra {
    	}
 	public static void main(String[] args) {
        		Guitarra  minhaGuitarra = new  Guitarra ("01020304", "fender", "telecaster", "eletrica", "mogno", 1500);
-       	System.out.println(minhaGuitarra.getNumeroSerie());
-       	System.out.println(minhaGuitarra.getMadeira());
-       	System.out.println(minhaGuitarra.getPreco());
-       	System.out.println(minhaGuitarra.getTipo());
-       	System.out.println(minhaGuitarra.getFabricante());
-       	System.out.println(minhaGuitarra.getModelo());
+       	System.out.println(("Numero de serie:" + minhaGuitarra.getNumeroSerie()));
+       	System.out.println(("Madeira usada:" + minhaGuitarra.getMadeira()));
+       	System.out.println(("Preco da guitarra:" + minhaGuitarra.getPreco()));
+       	System.out.println(("Tipo de guitarra:" + minhaGuitarra.getTipo()));
+       	System.out.println(("Fabricante:" + minhaGuitarra.getFabricante()));
+       	System.out.println(("Modelo:" + minhaGuitarra.getModelo()));
    	}
 }
