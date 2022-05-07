@@ -6,7 +6,7 @@ public class Guitarra {
 			String numeroSerie,	String  fabricante,
 			String modelo,		String  tipo,
 			String madeira,		double  preco) {
-		      this.numeroSerie = numeroSerie;
+		this.numeroSerie = numeroSerie;
        		this.fabricante = fabricante;
        		this.modelo = modelo;
        		this.tipo = tipo;
@@ -18,7 +18,7 @@ public class Guitarra {
    	}
    	public void setNumeroSerie(String numeroSerie) {
        		this.numeroSerie = numeroSerie;
-    }
+    	}
    	public String getFabricante() {
        		return fabricante;
    	}
