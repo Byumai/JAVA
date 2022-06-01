@@ -1,0 +1,34 @@
+package calculoimc;
+import java.until.Scanner;
+
+public class CalculoImc{
+    public static void main(String[] args) {
+    double peso;
+    double altura;
+    
+    Scanner leia = new Scanner(System.in);
+    System.out.println("Qual seu peso ?");
+    peso = leia.nextDouble();
+    System.out.println("Qual sua altura ?");
+    altura = leia.nextDoubele();
+    
+    double imc;
+    imc = peso / (altura*altura);
+    
+    if(imc < 17){
+        System.out.println("Muito abaixo do peso.");
+    }else if(imc >= 17 && imc <= 18.49){
+        System.out.println("Abaixo do peso.");
+    }else if(imc >= 18.50 && imc <= 24.99){
+        System.out.println("Peso normal.");
+    }else if(imc >= 25 && imc <= 29.99){
+        System.out.println("Acima do peso.");
+    }else if(imc >= 30 && imc <= 34.99){
+        System.out.println("Obesidade I.");
+    }else if(imc >= 35 && imc <= 39.99){
+        System.out.println("Obesidade II.");
+    }else{
+        System.out.println("Obesidade III.");
+    }
+    System.out.println("Seu IMC é: "+imc);
+}
